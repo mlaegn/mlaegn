@@ -1,19 +1,21 @@
-<!-- Wave header background -->
 <p align="center">
   <a href="#">
     <img src="https://capsule-render.vercel.app/api?type=waving&section=header&height=140&color=0:0A66C2,100:78B3E3" alt="MLAEGN header wave" />
   </a>
 </p>
 
-<!-- Custom-font heading (Space Grotesk) -->
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=42&duration=2000&pause=1500&repeat=false&color=0A66C2&center=true&vCenter=true&width=520&height=60&lines=MLAEGN"
-    alt="@mlaegn"
+    src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=42&duration=2000&pause=1500&repeat=false&color=0A66C2&center=true&vCenter=true&width=520&height=60&lines=@mlaegn"
+    alt="MLAEGN"
   />
   <br/>
   <samp>data @ Gnosis</samp><br/>
-  <!--<sub>web3 analytics on Gnosis</sub>-->
+  <!--<sub>web3</sub>-->
+  <!-- alt options:
+       <samp>data science @ Gnosis (web3)</samp>
+       <samp>web3 data @ Gnosis</samp>
+  -->
 </p>
 
 <!-- STATS + LANGUAGES -->
