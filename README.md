@@ -21,13 +21,11 @@
 <!-- STATS + LANGUAGES -->
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api?username=mlaegn&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&border_radius=8&theme=transparent"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mlaegn&theme=transparent"
     height="150"
     alt="GitHub stats for mlaegn (commits, PRs, issues, contributed-to)"
   />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=mlaegn&layout=compact&langs_count=8&hide=Jupyter%20Notebook&hide_border=true&border_radius=8&theme=transparent"
-    height="150"
-    alt="Top languages for mlaegn"
-  />
 </p>
+
+
+<!-- https://github-readme-stats.vercel.app/api?username=mlaegn&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&border_radius=8&theme=transparent-->
