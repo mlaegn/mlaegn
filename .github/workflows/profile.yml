@@ -1,0 +1,37 @@
+name: profile
+
+# Regenerates the languages line and the stats card in README.md from GitHub itself.
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate
+        env:
+          # PROFILE_TOKEN, if set: a fine-grained token with read-only Contents and
+          # Metadata on all my repos, so private repos count towards the languages
+          # line. Without it the workflow token sees public repos only.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
+        run: python scripts/profile.py
+
+      - name: Commit if changed
+        run: |
+          git diff --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md img/stats-dark.svg img/stats-light.svg
+          git commit -m "Regenerate languages line and stats"
+          git push
